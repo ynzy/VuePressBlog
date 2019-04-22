@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /head_image.png
+heroImage: /icons/icon.png
 actionText: 快速阅读 →
 actionLink: /zh/guide/
 features:

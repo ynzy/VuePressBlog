@@ -10,7 +10,8 @@ module.exports = {
       }
     },
     head: [
-      ['link', { rel: 'icon', href: '/favicon32x32.ico' }]
+      ['link', { rel: 'icon', href: '/favicon32x32.ico' }],
+      ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
     plugins: pluginConf,
     base: "/VuePressBlog/",
