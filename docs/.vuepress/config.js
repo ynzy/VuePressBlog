@@ -1,4 +1,4 @@
-const pluginConf = require('../../config/pluginConf');
+const pluginConf = require('../../config/pluginConf.js');
 const navConf = require('../../config/navConf');
 const sidebarConf = require('../../config/sidebarConf/index');
 module.exports = {
@@ -13,12 +13,23 @@ module.exports = {
       ['link', { rel: 'icon', href: '/favicon32x32.ico' }],
       ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
-    plugins: pluginConf,
+    plugins: [
+      ['@vuepress/back-to-top', true],
+      ['@vuepress/google-analytics', {
+        ga: 'UA-138865245-1'
+      }],
+      ['@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用.",
+          buttonText: "刷新"
+        }
+      }],
+    ],
     base: "/VuePressBlog/",
     themeConfig: {
       lastUpdated: '上次更新',
       repo: 'ynzy/VuePressBlog',
-      // repoLabel: '查看源码',
       editLinks: true,
       editLinkText: '编辑文档',
       docsDir: 'docs',
