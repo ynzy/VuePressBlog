@@ -1,6 +1,17 @@
 module.exports = [
     { text: 'Home', link: '/' },
-    { text: 'Guide', link: '/guide/' },
+    { text: 'css',
+    items: [
+      { text: 'css', link: '/css/' },
+    ]
+  },
+    { text: 'javascript', link: '/javascript/' },
+    { text: 'about', link: '/about/' },
+    { text: 'more',
+      items: [
+          { text: 'favourite', link: '/more/favourite/' },
+      ]
+    },
     {
       text: 'Languages',
       items: [

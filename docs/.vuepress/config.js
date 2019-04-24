@@ -27,6 +27,9 @@ module.exports = {
       }],
     ],
     base: "/VuePressBlog/",
+    markdown: {
+      lineNumbers: true
+    },
     themeConfig: {
       lastUpdated: '上次更新',
       repo: 'ynzy/VuePressBlog',
@@ -41,7 +44,7 @@ module.exports = {
       },
       nav: navConf,
       sidebar: sidebarConf,
-      sidebarDepth: 2,
-      displayAllHeaders: true
+      // sidebarDepth: 2,
+      // displayAllHeaders: true
     }
   }
